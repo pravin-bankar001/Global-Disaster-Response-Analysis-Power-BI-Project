@@ -1,159 +1,157 @@
-🌍 Global Disaster Response Analysis – Power BI Project
-📌 Project Overview
+# 🌍 Global Disaster Response Analysis | Power BI Dashboard
 
-The Global Disaster Response Analysis project is an interactive Power BI dashboard designed to analyze global natural disasters, evaluate emergency response performance, explore regional disaster impacts, and support recovery planning.
+An interactive **Power BI** project that analyzes global disaster data (2018–2024) to understand disaster frequency, economic loss, casualties, aid distribution, response performance, and recovery trends across countries and disaster types.
 
-The dashboard provides insights into disaster trends, response effectiveness, aid and funding distribution, and recovery forecasts to help stakeholders understand disaster patterns and make data-driven decisions.
+---
 
-🎯 Project Objectives
-Analyze global disaster patterns across countries and regions.
-Understand the impact and distribution of disasters.
-Evaluate emergency response performance.
-Explore disaster relief aid and funding allocation.
-Support recovery planning through forecasting and trend analysis.
-Present key insights through interactive Power BI visualizations.
-📊 Dashboard Pages
+## 📌 Table of Contents
+- [Project Overview](#-project-overview)
+- [Business Problem](#-business-problem)
+- [Dataset](#-dataset)
+- [Tools & Technologies](#-tools--technologies)
+- [Dashboard Pages](#-dashboard-pages)
+- [Key KPIs](#-key-kpis)
+- [Key Insights](#-key-insights)
+- [Recommendations](#-recommendations)
+- [Author](#-author)
 
-The dashboard contains five main report pages.
+---
 
-1. Executive Overview
+## 📖 Project Overview
 
-Provides a high-level summary of global disaster activity and its overall impact.
+This project provides a complete view of global disaster management through a 5-page interactive Power BI report. It helps decision-makers track the scale of disasters, evaluate how efficiently aid is allocated, measure response and recovery performance, and look ahead using forecasting.
 
-Key focus areas:
+## 🎯 Business Problem
 
-Global disaster overview
-Major disaster-related KPIs
-Disaster trends and distributions
-High-level impact analysis
-Summary of response and recovery activities
-2. Regional & Country Analysis
+Governments and relief organizations need to answer questions such as:
+- How many disasters occur each year, and where?
+- Which countries and disaster types cause the most economic loss and casualties?
+- How is aid distributed across countries and disaster types?
+- How fast do teams respond, and does faster response shorten recovery?
+- What does the future trend of disaster occurrences look like?
 
-Focuses on comparing disaster activity and impacts across geographical areas.
+## 🗂 Dataset
 
-Key focus areas:
+| Item | Details |
+|------|---------|
+| Records | ~50,000 disaster events |
+| Period | 2018 – 2024 |
+| Source | *Add your dataset source / link here (e.g., Kaggle)* |
+| Format | Excel / CSV |
 
-Country-level disaster analysis
-Regional comparisons
-Geographic distribution of disasters
-Identification of highly affected areas
-Comparison of disaster patterns across countries
-3. Response Performance
+**Key fields:** `country`, `disaster_type`, `year`, `casualties`, `economic_loss_usd`, `aid_amount`, `response_time_hours`, `recovery_duration_days`, `efficiency_score`, `response_time_improvement_%`
 
-Evaluates how effectively disaster response operations are carried out.
+> Update the field names above to match your actual dataset.
 
-Key focus areas:
+## 🛠 Tools & Technologies
 
-Emergency response performance
-Response time and efficiency, if available
-Comparison of response outcomes
-Identification of response gaps
-Assessment of operational effectiveness
-4. Aid & Funding
+- **Power BI Desktop** – data modeling, DAX, visualization
+- **Power Query** – data cleaning and transformation
+- **DAX** – KPI measures and calculations
+- **Excel** – raw data source
+- **Python visual** *(if used)* – response time variability by disaster type
 
-Analyzes disaster relief assistance and funding distribution.
+---
 
-Key focus areas:
+## 📊 Dashboard Pages
 
-Disaster relief funding
-Aid allocation across regions
-Financial resource distribution
-Comparison of funding and disaster impact
-Identification of potential resource allocation gaps
-5. Recovery & Forecasting
+### 1️⃣ Executive Overview
+A high-level summary of global disaster impact with slicers for **Country**, **Disaster Type**, and **Year**.
 
-Focuses on recovery progress and potential future disaster-related trends.
+- KPI cards: Total Disasters, Total Economic Loss, Total Casualties, Total Aid, Average Efficiency, Avg Response Time
+- Line chart: Total Disasters by Year
+- Map: Country-wise Economic Loss
+- Bar chart: Economic Loss by Country
 
-Key focus areas:
+![Executive Overview](images/Executive-Overview.jpg)
 
-Recovery progress analysis
-Historical trend evaluation
-Disaster trend forecasting
-Recovery planning insights
-Support for future resource planning
+---
 
-Note: The specific KPIs, metrics, and forecasting methods depend on the dataset and measures implemented in the Power BI report.
+### 2️⃣ Regional & Country Analysis
+Drill into geographic and disaster-type patterns.
 
-🛠️ Tools & Technologies
-Power BI Desktop – Dashboard development and interactive visualizations
-Power Query – Data cleaning and transformation
-DAX – Calculated measures and analytical metrics
-Microsoft Excel / CSV / Other Data Sources – Data input, depending on the dataset
-GitHub – Project documentation and version control
-🔍 Analytical Approach
+- Map: Total Casualties by Country
+- Bar chart: Total Economic Loss by Disaster Type
+- Matrix with conditional formatting: Casualties and Economic Loss by Disaster Type and Year
 
-The project follows a typical business intelligence workflow:
+![Regional and Country Analysis](images/Regional-Country-Analysis.jpg)
 
-Data Collection: Gather disaster-related data from the selected source.
-Data Cleaning: Handle missing values, duplicates, inconsistent formats, and data quality issues.
-Data Transformation: Prepare the data for analysis using Power Query.
-Data Modeling: Establish relationships between relevant tables, where applicable.
-Measure Development: Create DAX measures for KPIs and analytical calculations.
-Dashboard Design: Build interactive report pages using suitable charts, maps, tables, and KPI cards.
-Insight Generation: Interpret disaster trends, regional impacts, response performance, funding distribution, and recovery patterns.
-💡 Expected Business Value
+---
 
-This dashboard can help stakeholders:
+### 3️⃣ Aid & Funding
+Shows how financial aid is distributed.
 
-Identify disaster-prone regions and affected countries.
-Compare disaster impacts across geographical areas.
-Monitor emergency response effectiveness.
-Understand the distribution of relief funding.
-Identify potential gaps in aid allocation.
-Evaluate recovery trends and support planning decisions.
-📁 Repository Structure
+- KPI cards: Total Aid, Aid per Casualty
+- Waterfall chart: Year-wise Aid Distribution by Disaster Type
+- Treemap: Total Aid by Country
+- Map: Aid per Affected Person by Country
 
-A recommended GitHub repository structure is:
+![Aid and Funding](images/Aid-_-Funding.jpg)
 
-text
-Global-Disaster-Response-Analysis/
-│
-├── README.md
-│
-├── dashboard/
-│   └── Global_Disaster_Response.pbix
-│
-├── data/
-│   └── dataset.csv
-│
-├── screenshots/
-│   ├── executive-overview.png
-│   ├── regional-country-analysis.png
-│   ├── response-performance.png
-│   ├── aid-funding.png
-│   └── recovery-forecasting.png
-│
-└── documentation/
-    └── project-notes.md
+---
 
+### 4️⃣ Response Performance
+Evaluates how quickly and efficiently teams respond.
 
-This is a suggested structure. Include only the folders and files that exist in your project. Check data licensing and remove confidential information before publishing.
+- KPI cards: Average Response Time, Median Response Time, Responses with SLA, % Within SLA
+- Scatter plot: Response Time vs Recovery Duration
+- Box plot: Response Time Variability by Disaster Type
+- Combo chart: Operational Efficiency vs Aid Allocation Timeline
 
-🚀 How to Use the Project
-Clone or download this repository.
-Open the .pbix file using Microsoft Power BI Desktop.
-If prompted, configure the data source paths and refresh the dataset.
-Navigate through the five dashboard pages.
-Use available slicers, filters, charts, and visual interactions to explore the analysis.
-📈 Key Learnings
+![Response Performance](images/Response-Performance.jpg)
 
-This project demonstrates practical skills in:
+---
 
-Data cleaning and transformation
-Data modeling and relationship management
-DAX calculations and KPI development
-Interactive dashboard design
-Geographic and comparative analysis
-Trend analysis and forecasting
-Business intelligence storytelling
-🔮 Future Enhancements
+### 5️⃣ Recovery & Forecasting
+Looks at recovery duration and future trends.
 
-Potential improvements include:
+- KPI cards: Average Recovery Duration, Aid per Casualty
+- Decomposition tree: Avg Recovery Duration by Country → Disaster Type
+- Forecast line chart: Disaster occurrences projected to 2026
+- Slicer: Response Time Improvement %
 
-Integrating regularly updated disaster datasets.
-Adding more detailed geographic analysis.
-Improving response time and recovery performance metrics.
-Comparing funding against estimated disaster damage.
-Incorporating advanced forecasting techniques.
-Adding drill-through pages for country-level analysis.
-Publishing the dashboard through Power BI Service, where appropriate.
+![Recovery and Forecasting](images/Recovery-_-Forecasting.jpg)
+
+---
+
+## 📈 Key KPIs
+
+| KPI | Value |
+|-----|-------|
+| Total Disasters | **50K** |
+| Total Casualties | **5M** |
+| Total Economic Loss | **$253.43bn** |
+| Total Aid | **$12.50bn** |
+| Aid per Casualty | **$2.49K** |
+| Average Efficiency | **87.57** |
+| Average Response Time | **12.18 hrs** |
+| Median Response Time | **10.51 hrs** |
+| Responses Within SLA | **100%** |
+| Average Recovery Duration | **49.68 days** |
+
+## 💡 Key Insights
+
+- **Disaster frequency peaked in 2021** (~7,270 events) and has declined since, reaching about 7,085 in 2024.
+- **Forecast shows a largely flat trend** for disaster occurrences through 2026.
+- **Economic loss is spread evenly** across disaster types, with Volcanic Eruption, Landslide, and Earthquake slightly highest.
+- **Brazil, Bangladesh, and China** are among the countries with the highest economic loss.
+- **Aid is relatively stable year to year** (~$1.8bn annually), while efficiency fluctuates only slightly (87.5–87.7).
+- **Faster response is loosely linked to longer recovery in some clusters**, suggesting response speed alone doesn't determine recovery time.
+- **Average recovery duration is ~50 days** across countries, with little variation by country and disaster type.
+
+> Review and edit these insights so they match what you observe in your final report.
+
+## ✅ Recommendations
+
+1. Prioritize aid toward countries with high economic loss and low aid per affected person.
+2. Invest in response-time improvement, since efficiency scores still have room to grow.
+3. Monitor disaster types with long recovery durations (e.g., Storm Surge, Flood) for targeted preparedness.
+4. Keep tracking SLA compliance together with recovery outcomes, not response time alone.
+
+## 👤 Author
+
+**Your Name**
+- LinkedIn: [your-link](https://linkedin.com/in/your-profile)
+- GitHub: [your-username](https://github.com/your-username)
+
+⭐ If you found this project useful, please give the repository a star!
