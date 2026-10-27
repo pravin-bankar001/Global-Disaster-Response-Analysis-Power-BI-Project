@@ -150,8 +150,5 @@ Looks at recovery duration and future trends.
 
 ## 👤 Author
 
-**Your Name**
-- LinkedIn: [your-link](https://linkedin.com/in/your-profile)
-- GitHub: [your-username](https://github.com/your-username)
-
-⭐ If you found this project useful, please give the repository a star!
+**Pravin Bankar**
+- LinkedIn: [your-link](linkedin.com/in/pravin-bankar)
