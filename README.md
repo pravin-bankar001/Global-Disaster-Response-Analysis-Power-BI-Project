@@ -63,7 +63,7 @@ A high-level summary of global disaster impact with slicers for **Country**, **D
 - Map: Country-wise Economic Loss
 - Bar chart: Economic Loss by Country
 
-![Executive Overview](images/Executive-Overview.jpg)
+![Executive Overview](Executive-Overview.jpg)
 
 ---
 
@@ -74,7 +74,7 @@ Drill into geographic and disaster-type patterns.
 - Bar chart: Total Economic Loss by Disaster Type
 - Matrix with conditional formatting: Casualties and Economic Loss by Disaster Type and Year
 
-![Regional and Country Analysis](images/Regional-Country-Analysis.jpg)
+![Regional and Country Analysis](Regional-Country-Analysis.jpg)
 
 ---
 
@@ -86,7 +86,7 @@ Shows how financial aid is distributed.
 - Treemap: Total Aid by Country
 - Map: Aid per Affected Person by Country
 
-![Aid and Funding](images/Aid-_-Funding.jpg)
+![Aid and Funding](Aid-&-Funding.jpg)
 
 ---
 
@@ -98,7 +98,7 @@ Evaluates how quickly and efficiently teams respond.
 - Box plot: Response Time Variability by Disaster Type
 - Combo chart: Operational Efficiency vs Aid Allocation Timeline
 
-![Response Performance](images/Response-Performance.jpg)
+![Response Performance](Response-Performance.jpg)
 
 ---
 
@@ -110,7 +110,7 @@ Looks at recovery duration and future trends.
 - Forecast line chart: Disaster occurrences projected to 2026
 - Slicer: Response Time Improvement %
 
-![Recovery and Forecasting](images/Recovery-_-Forecasting.jpg)
+![Recovery and Forecasting](Recovery-&-Forecasting.jpg)
 
 ---
 
