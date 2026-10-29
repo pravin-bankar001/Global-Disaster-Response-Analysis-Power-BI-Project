@@ -139,8 +139,6 @@ Looks at recovery duration and future trends.
 - **Faster response is loosely linked to longer recovery in some clusters**, suggesting response speed alone doesn't determine recovery time.
 - **Average recovery duration is ~50 days** across countries, with little variation by country and disaster type.
 
-> Review and edit these insights so they match what you observe in your final report.
-
 ## ✅ Recommendations
 
 1. Prioritize aid toward countries with high economic loss and low aid per affected person.
